@@ -1,0 +1,264 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fefdfd;
+  color: #333;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #e8491d;
+}
+
+/* Navbar */
+#navbar {
+  background-color: #333;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  text-align: left;
+}
+
+#navbar ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+#navbar ul li a {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Willkommen-Bereich */
+#welcome-section {
+  height: 96vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #cb0d0db3, #159a4c);
+  color: rgb(94, 198, 230);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+#welcome-section h1 {
+  font-size: 3em;
+  margin: 0;
+  color: #4b0082;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  z-index: 1;
+}
+
+/* Profilbild */
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #333;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Bildunterschrift */
+.caption {
+  margin-top: 10px;
+  font-size: 2em;
+  color: #4b0082;
+}
+
+/* Projekte */
+#projects {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#projects h2 {
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.project-tile {
+  display: inline-block;
+  width: 250px;
+  margin: 15px;
+  background-color: rgba(95, 217, 253, 0.8);
+  border: 1px solid #afa8a8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-tile img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.project-tile p {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Kontakt */
+#contact {
+  padding: 50px 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+/* Kontaktformular */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+  color: #999;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+  border-color: #e8491d;
+  outline: none;
+}
+
+#contact form button {
+  padding: 10px 20px;
+  background-color: #18b2a8e1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact form button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .social-icons a {
+  color: #e8491d;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #navbar ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  #projects h2,
+  #contact h2 {
+    font-size: 2em;
+  }
+
+  .project-tile {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  #contact {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #contact h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  #contact form input,
+  #contact form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+  }
+
+  #contact button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+  }
+}

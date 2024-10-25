@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio von Khalid Rashid, der seine Projekte präsentiert."
+    />
+    <title>Khalid Rashid Portfolio</title>
+    <link href="Portifolio.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="navbar">
+      <nav>
+        <ul>
+          <li><a href="#welcome-section" aria-label="Gehe zu Home">Home</a></li>
+          <li>
+            <a href="#projects" aria-label="Gehe zu Projekten">Projekte</a>
+          </li>
+          <li><a href="#contact" aria-label="Gehe zu Kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="welcome-section">
+        <div class="container">
+          <h1>Willkommen zu meinem Portfolio</h1>
+          <div class="profile-image">
+            <img src="profilbild.jpg" alt="Khalid Rashid" />
+          </div>
+          <div class="caption">Khalid Rashid 👦🏽</div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Meine Projekte</h2>
+
+        <div class="project-tile">
+          <a
+            href="https://github.com/khalid-rashid/praktikum"
+            target="_blank"
+            aria-label="Praktikum Formular auf GitHub"
+          >
+            <img src="praktikum.jpg" alt="Praktikum Formular" />
+            <p>Praktikum Formular</p>
+          </a>
+        </div>
+
+        <div class="project-tile">
+          <a
+            href="https://github.com/khalid-rashid/geschichte"
+            target="_blank"
+            aria-label="Meine Geschichte auf GitHub"
+          >
+            <img src="geschichte.jpg" alt="Meine Geschichte" />
+            <p>Meine Geschichte</p>
+          </a>
+        </div>
+
+        <div class="project-tile">
+          <a
+            href="https://github.com/khalid-rashid/jsdoc"
+            target="_blank"
+            aria-label="JS-Dokumentation auf GitHub"
+          >
+            <img src="jsdoc.jpg" alt="JS-Dokumentation" />
+            <p>JS-Dokumentation</p>
+          </a>
+        </div>
+
+        <div class="project-tile">
+          <a
+            href="https://github.com/khalid-rashid/business"
+            target="_blank"
+            aria-label="Geschäftswebseite auf GitHub"
+          >
+            <img src="business.jpg" alt="Geschäftswebseite" />
+            <p>Geschäftswebseite</p>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Kontakt</h2>
+        <form onsubmit="return handleFormSubmit()">
+          <input
+            type="text"
+            placeholder="Name"
+            required
+            aria-label="Name eingeben"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            required
+            aria-label="E-Mail eingeben"
+          />
+          <textarea
+            placeholder="Nachricht"
+            required
+            aria-label="Nachricht eingeben"
+          ></textarea>
+          <button type="submit" aria-label="Nachricht senden">Senden</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Khalid Rashid | Alle Rechte vorbehalten</p>
+      <div class="social-icons">
+        <a
+          id="profile-link"
+          href="https://github.com/khalidrashid143-4"
+          target="_blank"
+          aria-label="Mein GitHub-Profil"
+          >GitHub</a
+        >
+        |
+        <a
+          href="https://www.instagram.com/macqul_khalid"
+          target="_blank"
+          aria-label="Mein Instagram-Profil"
+          >Instagram</a
+        >
+        |
+        <a
+          href="https://www.tiktok.com/@macqul_khalid"
+          target="_blank"
+          aria-label="Mein TikTok-Profil"
+          >TikTok</a
+        >
+        |
+        <a
+          href="https://youtube.com/@khalidrashidkrf"
+          target="_blank"
+          aria-label="Mein YouTube-Profil"
+          >YouTube</a
+        >
+      </div>
+    </footer>
+
+    <script>
+      function handleFormSubmit() {
+        alert("Vielen Dank für Ihre Nachricht!");
+        return false; // Verhindert das tatsächliche Senden des Formulars
+      }
+    </script>
+  </body>
+</html>
